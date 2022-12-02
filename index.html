@@ -3,17 +3,17 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS and JS -->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css-minified/style.css" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css-minified/style.css">
     <title>Portfolio</title>
 </head>
 
@@ -24,10 +24,10 @@
         <div class="container">
             <div class="profile d-flex flex-column align-items-center">
                 <img src="https://avatars.githubusercontent.com/u/108118506?v=4" alt="profile-picture"
-                    class="img-fluid rounded-circle profile__pic" />
-                <h1>
+                    class="img-fluid rounded-circle profile__pic">
+                <h2>
                     <a href="index.html" class="profile__title text-white">Shashank Rai</a>
-                </h1>
+                </h2>
                 <div class="profile__social-links mt-3 d-flex align-items-center justify-content-between">
                     <a href="#" class="twitter d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-twitter"></i>
@@ -152,7 +152,8 @@
             </div>
         </section>
         <!-- About Section Ends -->
-        <section id="skills">
+        <!-- Skills Section Starts -->
+        <section id="skills" class="section-bg">
             <div class="container">
                 <div class="skills__content-wrapper">
                     <h2 class="section-heading">Skills</h2>
@@ -163,11 +164,37 @@
                         dolore.</p>
                 </div>
                 <div class="skills__content-wrapper">
-
+                    <div
+                        class="skills__content d-flex justify-content-center justify-content-lg-between gap-4 flex-wrap">
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/react.svg" alt="react" class="img-fluid">
+                            <h3 class="mt-2">React</h3>
+                        </div>
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/redux.svg" alt="redux" class="img-fluid">
+                            <h3 class="mt-2">Redux</h3>
+                        </div>
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/mui.png" alt="material-ui" class="img-fluid">
+                            <h3 class="mt-2">Material UI</h3>
+                        </div>
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/shopify.svg" alt="shopify-polris" class="img-fluid">
+                            <h3 class="mt-2">Shopify Polaris</h3>
+                        </div>
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center ">
+                            <img src="./assets/images/languages/sass.svg" alt="sass" class="img-fluid">
+                            <h3 class="mt-2">SASS</h3>
+                        </div>
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/bootstrap.svg" alt="bootstrap" class="img-fluid">
+                            <h3 class="mt-2">Bootstrap</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        <!-- Skills Section Ends -->
     </main>
 
 

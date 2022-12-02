@@ -1,0 +1,25 @@
+@use '../utils' as u;
+
+.skills {
+
+    &__card {
+        border-radius: 10px;
+        box-shadow: var(--shadow-black);
+        min-width: 350px;
+
+        img {
+            height: 200px !important;
+            width: 150px !important;
+        }
+
+        h3 {
+            color: var(--color-matisse);
+            font-family: u.$font-montserrat;
+            font-weight: 800;
+        }
+    }
+
+    &__card:hover {
+        transform: scale(1.02);
+    }
+}
