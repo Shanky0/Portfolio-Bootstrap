@@ -7,8 +7,8 @@ ul {
 }
 
 body {
+    color: var(--color-shark);
     font-family: u.$font-montserrat;
-    color: #272829;
     margin: 0;
 }
 
@@ -29,4 +29,35 @@ h5,
 h6 {
     font-family: u.$font-raleway;
     margin: 0;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    color: var(--color-biscay);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.section-heading::after {
+    background: #149ddd;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.section-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }

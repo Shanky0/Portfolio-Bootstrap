@@ -1,12 +1,12 @@
 .header {
     background-color: var(--color-black-pearl);
+    left: 0;
     max-width: 300px;
-    width: 100%;
+    overflow-y: auto;
     transition: all ease-in-out 0.5s;
     transition: all 0.5s;
+    width: 100%;
     z-index: 1000;
-    overflow-y: auto;
-    left: 0;
 }
 
 .profile {
@@ -54,6 +54,10 @@
         }
 
     }
+}
+
+#main {
+    margin-left: 300px;
 }
 
 @media (max-width: 1199px) {
