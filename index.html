@@ -3,50 +3,67 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS and JS -->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" />
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css-minified/style.css">
+    <link rel="stylesheet" href="./css-minified/style.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
     <i class="fa-solid fa-bars d-lg-none"></i>
     <header class="position-fixed top-0 bottom-0 start-0 header">
-        <div class="d-flex flex-column">
-            <div class="profile">
+        <div class="container">
+            <div class="profile d-flex flex-column align-items-center">
                 <img src="https://avatars.githubusercontent.com/u/108118506?v=4" alt="profile-picture"
-                    class="img-fluid rounded-circle">
-                <h1 class="text-light">
-                    <a href="index.html">Shashank Rai</a>
+                    class="img-fluid rounded-circle profile__pic" />
+                <h1>
+                    <a href="index.html" class="profile__title text-white">Shashank Rai</a>
                 </h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="#" class="twitter">
+                <div class="profile__social-links mt-3 d-flex align-items-center justify-content-between">
+                    <a href="#" class="twitter d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#" class="facebook">
+                    <a href="#" class="facebook d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="#" class="instagram">
+                    <a href="#" class="instagram d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="linkedin">
+                    <a href="#" class="linkedin d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
             <nav class="nav-menu navbar">
-
+                <ul class="navbar__list d-flex flex-column align-items-start">
+                    <li><a href="index.html" class="d-flex align-items-center gap-2"><i
+                                class="fa-solid fa-house"></i><span>Home</span></a></li>
+                    <li><a href="#about" class="d-flex align-items-center gap-2"><i
+                                class="fa-solid fa-user"></i><span>About</span></a></li>
+                    <li><a href="#resume" class="d-flex align-items-center gap-2"><i
+                                class="fa-solid fa-file"></i><span>Resume</span></a></li>
+                    <li><a href="#portfolio" class="d-flex align-items-center gap-2"><i
+                                class="fa-solid fa-tablet"></i><span>Portfolio</span></a></li>
+                    <li><a href="#service" class="d-flex align-items-center gap-2"><i
+                                class="fa-solid fa-server"></i><span>Services</span></a></li>
+                    <li><a href="#contact" class="d-flex align-items-center gap-2"><i
+                                class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
+                </ul>
             </nav>
         </div>
     </header>
+
+    <section class="hero">
+
+    </section>
 
 
 </body>

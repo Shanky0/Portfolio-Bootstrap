@@ -1,0 +1,52 @@
+.header {
+    background-color: var(--color-black-pearl);
+    max-width: 300px;
+    width: 100%;
+}
+
+.profile {
+    padding: 20px;
+
+    &__pic {
+        border: 8px solid var(--color-ebony-clay);
+        width: 120px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+    }
+
+    &__social-links {
+        padding-left: 30px;
+        width: 100%;
+
+        a {
+            background-color: #212431;
+            border-radius: 50%;
+            height: 36px;
+            width: 36px;
+        }
+    }
+}
+
+.navbar {
+    &__list {
+        gap: 20px;
+        padding-left: 50px;
+        width: 100%;
+
+        span {
+            color: var(--color-spun-pearl);
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+
+        span:hover {
+            color: #FFFFFF;
+        }
+
+    }
+}
