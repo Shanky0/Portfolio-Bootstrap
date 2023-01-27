@@ -5,12 +5,10 @@
     &__card {
         border-radius: 10px;
         box-shadow: var(--shadow-black);
-        min-width: 350px;
-
-        img {
-            height: 200px !important;
-            width: 150px !important;
-        }
+        max-width: 300px;
+        width:calc(100% - 25%);
+        padding:10px;
+        height: 150px;
 
         h3 {
             color: var(--color-matisse);

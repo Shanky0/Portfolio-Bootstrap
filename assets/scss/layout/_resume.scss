@@ -1,0 +1,61 @@
+@use '../utils' as u;
+
+.resume {
+    &__title {
+        color: #050d18;
+        font-size: 26px;
+        font-weight: 700;
+        margin-block: 20px;
+    }
+
+    &__item {
+
+        border-left: 2px solid var(--color-matisse);
+        padding: 0 0 20px 20px;
+
+        :before {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: -9px;
+            top: 0;
+            background: #fff;
+            border: 2px solid #1f5297;
+        }
+
+        h4 {
+            color: var(--color-biscay);
+            font-family: u.$font-raleway;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        h5 {
+            font-size: 16px;
+            background: var(--color-link-water);
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-block: 10px;
+        }
+
+        p {
+            color: var(--color-shark);
+            font-size: 16px;
+            font-style: italic !important;
+            font-weight: 400;
+            margin-block: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+
+            li {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
