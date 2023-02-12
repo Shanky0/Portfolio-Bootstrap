@@ -14,15 +14,15 @@
         padding: 0 0 20px 20px;
 
         :before {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            border-radius: 50px;
-            left: -9px;
-            top: 0;
             background: #fff;
             border: 2px solid #1f5297;
+            border-radius: 50px;
+            content: "";
+            height: 16px;
+            left: -9px;
+            position: absolute;
+            top: 0;
+            width: 16px;
         }
 
         h4 {
@@ -33,12 +33,12 @@
         }
 
         h5 {
-            font-size: 16px;
             background: var(--color-link-water);
-            padding: 5px 15px;
             display: inline-block;
+            font-size: 16px;
             font-weight: 600;
             margin-block: 10px;
+            padding: 5px 15px;
         }
 
         p {
@@ -50,8 +50,8 @@
         }
 
         ul {
-            padding-left: 20px;
             list-style-type: disc;
+            padding-left: 20px;
 
             li {
                 padding-bottom: 10px;

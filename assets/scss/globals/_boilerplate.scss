@@ -10,6 +10,7 @@ body {
     color: var(--color-shark);
     font-family: u.$font-montserrat;
     margin: 0;
+    text-align: justify;
 }
 
 a {
@@ -36,7 +37,7 @@ h6 {
 }
 
 section {
-    padding: 60px 0;
+    padding: 60px 30px;
 }
 
 .section-heading {
