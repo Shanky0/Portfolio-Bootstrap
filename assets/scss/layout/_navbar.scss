@@ -1,3 +1,5 @@
+@use '../utils' as u;
+
 .header {
     background-color: var(--color-black-pearl);
     left: 0;
@@ -15,6 +17,8 @@
     &__pic {
         border: 8px solid var(--color-ebony-clay);
         width: 120px;
+        animation-name: u.$slide-down;
+        animation-duration: 2s;
     }
 
     &__title {
@@ -27,12 +31,23 @@
         padding-left: 30px;
         width: 100%;
 
+        :nth-child(even) {
+            animation-name: u.$slide-left;
+            animation-duration: 2s;
+        }
+
+        :nth-child(odd) {
+            animation-name: u.$slide-right;
+            animation-duration: 2s;
+        }
+
         a {
             background-color: #212431;
             border-radius: 50%;
             height: 36px;
             width: 36px;
         }
+
     }
 }
 
@@ -48,6 +63,16 @@
         li {
             font-size: 18px;
             font-weight: 400;
+        }
+
+        :nth-child(even) {
+            animation-name: u.$slide-up;
+            animation-duration: 2s;
+        }
+
+        :nth-child(odd) {
+            animation-name: u.$slide-down;
+            animation-duration: 2s;
         }
 
         span {
