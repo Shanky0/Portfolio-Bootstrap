@@ -15,10 +15,12 @@
     padding: 20px;
 
     &__pic {
-        border: 8px solid var(--color-ebony-clay);
-        width: 120px;
-        animation-name: u.$slide-down;
         animation-duration: 2s;
+        animation-name: u.$slide-down;
+        border: 8px solid var(--color-ebony-clay);
+        height: 120px;
+        object-fit: cover;
+        width: 120px;
     }
 
     &__title {
@@ -30,22 +32,15 @@
     &__social-links {
         padding-left: 30px;
         width: 100%;
-
-        :nth-child(even) {
-            animation-name: u.$slide-left;
-            animation-duration: 2s;
-        }
-
-        :nth-child(odd) {
-            animation-name: u.$slide-right;
-            animation-duration: 2s;
-        }
+        animation: u.$pop-up 2s ease infinite, u.$slide-left 2s;
+        animation-delay: calc(15s + (5s * var(--i))), 2s;
 
         a {
             background-color: #212431;
             border-radius: 50%;
-            height: 36px;
-            width: 36px;
+            height: 40px;
+            width: 40px;
+            font-size: 25px;
         }
 
     }
@@ -56,23 +51,15 @@
 
     &__list {
         gap: 20px;
+        height: 100%;
         padding-left: 50px;
         width: 100%;
-        height: 100%;
 
         li {
+            animation: u.$slide-right .8s ease-out forwards;
+            animation-delay: calc(.2s * var(--i));
             font-size: 18px;
             font-weight: 400;
-        }
-
-        :nth-child(even) {
-            animation-name: u.$slide-up;
-            animation-duration: 2s;
-        }
-
-        :nth-child(odd) {
-            animation-name: u.$slide-down;
-            animation-duration: 2s;
         }
 
         span {
