@@ -3,17 +3,19 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS and JS -->
-    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css" />
     <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css-minified/style.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Typed JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="./css-minified/style.css" />
     <title>Portfolio</title>
 </head>
 
@@ -23,40 +25,52 @@
     <header class="position-fixed top-0 bottom-0 header">
         <div class="container">
             <div class="profile d-flex flex-column align-items-center">
-                <img src="https://avatars.githubusercontent.com/u/108118506?v=4" alt="profile-picture"
-                    class="img-fluid rounded-circle profile__pic">
+                <img src="./assets/images/avatars/avatar.jpg" alt="profile-picture"
+                    class="img-thumbnail rounded-circle profile__pic" width="120px" />
                 <h2>
                     <a href="index.html" class="profile__title text-white">Shashank Rai</a>
                 </h2>
                 <div class="profile__social-links mt-3 d-flex align-items-center justify-content-between">
-                    <a href="#" class="twitter d-flex align-items-center justify-content-center">
+                    <a href="#" style="--i:2" class="twitter d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="#" class="facebook d-flex align-items-center justify-content-center">
+                    <a href="#" style="--i:4" class="facebook d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="#" class="instagram d-flex align-items-center justify-content-center">
+                    <a href="#" style="--i:6" class="instagram d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="linkedin d-flex align-items-center justify-content-center">
+                    <a href="#" style="--i:8" class="linkedin d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
             <nav class="nav-menu navbar">
                 <ul class="navbar__list d-flex flex-column justify-content-evenly">
-                    <li><a href="index.html" class="d-flex align-items-start gap-3"><i
-                                class="fa-solid fa-house"></i><span>Home</span></a></li>
-                    <li><a href="#about" class="d-flex align-items-center gap-3"><i
-                                class="fa-solid fa-user"></i><span>About</span></a></li>
-                    <li><a href="#skills" class="d-flex align-items-center gap-3"><i
-                                class="fa-solid fa-server"></i><span>Skills</span></a></li>
-                    <li><a href="#resume" class="d-flex align-items-center gap-3"><i
-                                class="fa-solid fa-file"></i><span>Resume</span></a></li>
-                    <li><a href="#portfolio" class="d-flex align-items-center gap-3"><i
-                                class="fa-solid fa-tablet"></i><span>Portfolio</span></a></li>
-                    <li><a href="#contact" class="d-flex align-items-center gap-3"><i
-                                class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
+                    <li style="--i:1">
+                        <a href="index.html" class="d-flex align-items-start gap-3"><i
+                                class="fa-solid fa-house"></i><span>Home</span></a>
+                    </li>
+                    <li style="--i:2">
+                        <a href="#about" class="d-flex align-items-center gap-3"><i
+                                class="fa-solid fa-user"></i><span>About</span></a>
+                    </li>
+                    <li style="--i:3">
+                        <a href="#skills" class="d-flex align-items-center gap-3"><i
+                                class="fa-solid fa-server"></i><span>Skills</span></a>
+                    </li>
+                    <li style="--i:4">
+                        <a href="#resume" class="d-flex align-items-center gap-3"><i
+                                class="fa-solid fa-file"></i><span>Resume</span></a>
+                    </li>
+                    <li style="--i:5">
+                        <a href="#portfolio" class="d-flex align-items-center gap-3"><i
+                                class="fa-solid fa-tablet"></i><span>Portfolio</span></a>
+                    </li>
+                    <li style="--i:6">
+                        <a href="#contact" class="d-flex align-items-center gap-3"><i
+                                class="fa-solid fa-envelope"></i><span>Contact</span></a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -65,10 +79,11 @@
     <!-- Hero Section Starts -->
     <section class="hero d-flex align-items-center justify-content-center p-3 p-sm-0">
         <div class="hero__content-wrapper">
-            <h1>Shashank Rai</h1>
-            <p>I'm
-                <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Developer</span>
-                <span class="typed-cursor">|</span>
+            <h1> <span class="d-none d-md-inline">
+                    < </span> Shashank Rai <span class="d-none d-md-inline"> /> </span></h1>
+            <p class="mt-2">
+                I'm a
+                <span class="typed" data-typed-items="Frontend Developer, UI Designer, Gamer, Photographer"></span>.
             </p>
         </div>
     </section>
@@ -79,25 +94,31 @@
             <div class="container">
                 <div class="about__content-wrapper">
                     <h2 class="section-heading">About</h2>
-                    <p>I'm a self-taught web developer with experience in designing new features from ideation to
-                        production, <b>implementation of wireframes</b> and design flows into high performance software
-                        applications. I take into consideration the user experience while writing <b>reusable</b> and
+                    <p class="section-desc">
+                        I'm a self-taught web developer with experience in designing new
+                        features from ideation to production,
+                        <b>implementation of wireframes</b> and design flows into high
+                        performance software applications. I take into consideration the
+                        user experience while writing <b>reusable</b> and
                         <b>efficient</b>
-                        code. I passionately combine good design, technology, and innovation in all my projects, which I
-                        like to accompany from the first idea to release. Currently, I'm focused on the learning
+                        code. I passionately combine good design, technology, and
+                        innovation in all my projects, which I like to accompany from the
+                        first idea to release. Currently, I'm focused on the learning
                         <b>Full-Stack</b> development.
                     </p>
                 </div>
                 <div class="about__content-wrapper mt-4 mt-lg-0 row gap-4 gap-lg-0">
-                    <img src="https://avatars.githubusercontent.com/u/108118506?v=4" alt="shashank-image"
-                        class="col-lg-4 img-fluid" width="300px">
+                    <img src="./assets/images/avatars/about.jpg" alt="shashank-image"
+                        class="col-lg-4 img-fluid about__img" height="250px" />
                     <div class="about__content col-lg-8 d-flex flex-column justify-content-evenly">
                         <h3>Frontend Developer</h3>
-                        <p class="pt-2">
-                            Hailing from Lucknow,India, I am currently working at Cedcoss Technologies Pvt. Ltd. as an
-                            <b>Associate Software Developer</b>. I am working as a <b>Frontend Developer (React)</b> in
-                            Magenative Team which provides one stop solution for customization and personalization of
-                            mobile apps for Shopify merchants.
+                        <p>
+                            Hailing from Lucknow,India, I am currently working at Cedcoss
+                            Technologies Pvt. Ltd. as an
+                            <b>Associate Software Developer</b>. I am working as a
+                            <b>Frontend Developer (React)</b> in Magenative Team which
+                            provides one stop solution for customization and personalization
+                            of mobile apps for Shopify merchants.
                         </p>
                         <div class="row mb-2">
                             <div class="col-lg-6 pt-4 pt-lg-0">
@@ -169,46 +190,59 @@
             <div class="container">
                 <div class="skills__content-wrapper">
                     <h2 class="section-heading">Skills</h2>
-                    <p>Using a combination of cutting-edge technologies and reliable open-source software I build
-                        user-focused, performant apps and websites for smartphones, tablets, and desktops.</p>
+                    <p class="section-desc">
+                        My learning is not limited to the academic institutions I've been
+                        to. I believe in <b>practical learning</b> and take up tasks in
+                        new domains. I learn how to complete a task and hence learn my way
+                        up to mastering that domain.
+                    </p>
+                    <p class="section-desc">
+                        I prefer grasping an unfamiliar concept through blog posts or
+                        examples which is why whenever I want to learn something
+                        technical, I explore Medium Blogs, Stack Overflow or GitHub
+                        repositories for better understanding.
+                    </p>
                 </div>
                 <div class="skills__content-wrapper">
                     <div class="skills__content d-flex justify-content-center flex-wrap gap-lg-3 gap-sm-4 gap-4">
                         <div class="skills__card d-flex flex-column justify-content-between align-items-center">
-                            <img src="./assets/images/languages/react.svg" alt="react" class="img-fluid" width="100px">
-                            <h3 class="mt-2">React</h3>
+                            <img src="./assets/images/languages/react.svg" alt="react" class="img-fluid"
+                                width="100px" />
+                            <h3 class="">React</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center">
-                            <img src="./assets/images/languages/redux.svg" alt="redux" class="img-fluid" width="100px">
-                            <h3 class="mt-2">Redux Tool Kit</h3>
+                        <div class=" skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/redux.svg" alt="redux" class="img-fluid"
+                                width="100px" />
+                            <h3 class="">Redux Tool Kit</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center">
+                        <div class=" skills__card d-flex flex-column justify-content-between align-items-center">
                             <img src="./assets/images/languages/typescript.svg" alt="typescript" class="img-fluid"
-                                width="100px">
-                            <h3 class="mt-2">Typescript</h3>
+                                width="100px" />
+                            <h3 class="">Typescript</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center">
+                        <div class=" skills__card d-flex flex-column justify-content-between align-items-center">
                             <img src="./assets/images/languages/mui.png" alt="material-ui" class="img-fluid"
-                                width="100px">
-                            <h3 class="mt-2">Material UI</h3>
+                                width="100px" />
+                            <h3 class="">Material UI</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center">
+                        <div class=" skills__card d-flex flex-column justify-content-between align-items-center">
                             <img src="./assets/images/languages/shopify.svg" alt="shopify-polris" class="img-fluid"
-                                width="100px">
-                            <h3 class="mt-2">Shopify Polaris</h3>
+                                width="100px" />
+                            <h3 class="">Shopify Polaris</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center ">
-                            <img src="./assets/images/languages/sass.svg" alt="sass" class="img-fluid" width="100px">
-                            <h3 class="mt-2">SASS</h3>
+                        <div class=" skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/sass.svg" alt="sass" class="img-fluid" width="100px" />
+                            <h3 class="">SASS</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center">
+                        <div class=" skills__card d-flex flex-column justify-content-between align-items-center">
                             <img src="./assets/images/languages/bootstrap.svg" alt="bootstrap" class="img-fluid"
-                                width="100px">
-                            <h3 class="mt-2">Bootstrap</h3>
+                                width="100px" />
+                            <h3 class="">Bootstrap</h3>
                         </div>
-                        <div class="skills__card d-flex flex-column justify-content-evenly align-items-center">
-                            <img src="./assets/images/languages/Git-Icon.svg" alt="git" class="img-fluid" width="100px">
-                            <h3 class="mt-2">Git</h3>
+                        <div class="skills__card d-flex flex-column justify-content-between align-items-center">
+                            <img src="./assets/images/languages/Git-Icon.svg" alt="git" class="img-fluid"
+                                width="100px" />
+                            <h3 class="">Git</h3>
                         </div>
                     </div>
                 </div>
@@ -220,24 +254,19 @@
             <div class="container">
                 <div class="resume__content-wrapper">
                     <h2 class="section-heading">Resume</h2>
-                    <p>My learning is not limited to the academic institutions I've been to. I believe in
-                        <b>practical</b> learning and take up tasks in new domains. I learn how to complete a task and
-                        hence learn my way up to mastering that domain.
-                    </p>
-                    <p> I prefer grasping an unfamiliar concept through blog posts or examples which is why whenever I
-                        want to learn something technical, I explore Medium Blogs, Stack Overflow or GitHub repositories
-                        for better understanding.</p>
                 </div>
-                <div class="resume__content-wrapper">
+                <div class="resume__content-wrapper section-desc">
                     <div class="row">
                         <div class="col-lg-6">
                             <h3 class="resume__title">Summary</h3>
                             <div class="resume__item position-relative">
                                 <h4>Shashank Rai</h4>
-                                <p>Innovative and Deadline-driven Frontend Developer with <b>18+ months</b> of
-                                    experience in
-                                    designing and developing user friendly websites from initial concept to final
-                                    pollished deliverables.</p>
+                                <p>
+                                    Innovative and Deadline-driven Frontend Developer with
+                                    <b>18+ months</b> of experience in designing and developing
+                                    user friendly websites from initial concept to final
+                                    pollished deliverables.
+                                </p>
                                 <ul>
                                     <li>Lucknow, Uttar Pradesh, India</li>
                                     <li>+91-8840337523</li>
@@ -255,8 +284,8 @@
                         <div class="col-lg-6">
                             <h3 class="resume__title">Professional Experience</h3>
                             <div class="resume__item position-relative">
-                                <h4>Frontend Developer </h4>
-                                <h5>2022 - Present </h5>
+                                <h4>Frontend Developer</h4>
+                                <h5>2022 - Present</h5>
                                 <p><b>Cedcoss Technologies Pvt Ltd., Lucknow, U.P.</b></p>
                                 <ul>
                                     <li>Working in Magenative team to create the best user experience for its shopify
@@ -277,7 +306,7 @@
 
     </main>
 
-
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

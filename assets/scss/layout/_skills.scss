@@ -1,23 +1,28 @@
 @use '../utils' as u;
 
 .skills {
-
     &__card {
         border-radius: 10px;
         box-shadow: var(--shadow-black);
         height: 150px;
         max-width: 300px;
-        padding:10px;
-        width:calc(100% - 25%);
+        padding: 10px;
+        width: calc(100% - 25%);
 
         h3 {
             color: var(--color-matisse);
             font-family: u.$font-montserrat;
             font-weight: 800;
         }
-    }
 
-    &__card:hover {
-        transform: scale(1.02);
+        img {
+            height: 100px;
+        }
+    }
+}
+
+#skills:hover {
+    .skills__card {
+        animation: u.$swing-top 1s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
     }
 }

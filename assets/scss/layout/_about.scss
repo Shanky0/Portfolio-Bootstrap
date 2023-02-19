@@ -1,4 +1,14 @@
+@use '../utils' as u;
+
 .about {
+    &__img {
+        border-radius: 5px;
+        max-height: 400px;
+        min-height: 200px;
+        object-fit: cover;
+        outline: 2px solid var(--color-curious-blue);
+    }
+
     &__content {
         h3 {
             color: var(--color-biscay);
@@ -16,5 +26,16 @@
         .fa-solid {
             color: var(--color-curious-blue);
         }
+    }
+}
+
+#about:hover {
+
+    // .about__img {
+    //     animation: u.$slide-down 1s ease-out .1s forwards;
+    // }
+
+    .about__content {
+        animation: u.$slide-up 1.5s ease-in-out .2s forwards;
     }
 }

@@ -22,7 +22,7 @@ a:hover {
     text-decoration: none;
 }
 
-a.active {
+a:active {
     color: #020c11;
 }
 
@@ -38,6 +38,16 @@ h6 {
 
 section {
     padding: 60px 30px;
+
+    :hover {
+        .section-heading {
+            animation: u.$slide-right .8s ease-in backwards;
+        }
+
+        .section-desc {
+            animation: u.$slide-left 3s ease 0s forwards;
+        }
+    }
 }
 
 .section-heading {
